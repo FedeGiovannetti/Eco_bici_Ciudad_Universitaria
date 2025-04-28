@@ -13,7 +13,7 @@ jobs:
     - name: Checkout repo
       uses: actions/checkout@v4
       with:
-        token: ${{ secrets.GITHUB_TOKEN }}  # Ensures token has write access
+        token: ${{ secrets.GITHUB_TOKEN }}  # Ensures token has access to the private repo
 
     - name: Install Python packages
       run: pip install requests pandas
@@ -30,4 +30,4 @@ jobs:
         git config --global user.email 'github-actions[bot]@users.noreply.github.com'
         git add data/stations.csv
         git commit -m "Update stations.csv [bot]" || echo "No changes to commit"
-        git push
+        git push https://x-access-token:${{ secrets.MY_PAT_TOKEN }}@github.com/FedeGiovannetti/Eco_bici_Ciudad_Universitaria.git
