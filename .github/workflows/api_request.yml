@@ -1,0 +1,22 @@
+name: API Request Every Hour
+
+on:
+  schedule:
+    - cron: '0 * * * *'  # Every hour
+  workflow_dispatch:     # Allow manual runs too
+
+jobs:
+  request_job:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout (optional but good habit)
+      uses: actions/checkout@v4
+
+    - name: Make API request
+      env:
+        CLIENT_ID: ${{ secrets.CLIENT_ID }}
+        CLIENT_SECRET: ${{ secrets.CLIENT_SECRET }}
+      run: |
+        pip install requests
+        python script/request.py
