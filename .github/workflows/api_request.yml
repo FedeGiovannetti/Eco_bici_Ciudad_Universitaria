@@ -17,8 +17,7 @@ jobs:
       uses: actions/checkout@v4
 
     - name: Install Python packages
-      run: pip install requests pandas
-
+      run: pip install requests pandas pytz
     - name: Make API request and save CSV
       env:
         CLIENT_ID: ${{ secrets.CLIENT_ID }}

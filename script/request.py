@@ -2,6 +2,10 @@ import requests
 import os
 import pandas as pd
 from datetime import datetime
+import pytz
+
+# Define your timezone
+timezone = pytz.timezone('America/Argentina/Buenos_Aires')
 
 ## Seteo el path
 
