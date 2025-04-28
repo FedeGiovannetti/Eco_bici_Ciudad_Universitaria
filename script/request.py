@@ -6,6 +6,7 @@ import pytz
 
 # Define your timezone
 timezone = pytz.timezone('America/Argentina/Buenos_Aires')
+now = datetime.now(timezone)
 
 ## Seteo el path
 
@@ -45,9 +46,9 @@ datos_filtrados = estaciones_status_df[(estaciones_status_df["station_id"] == 42
 
 # Le agrego la fecha
 
-hoy = datetime.today().strftime('%Y-%m-%d')
-ahora = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
-dia = datetime.now().strftime('%A')  
+hoy = datetime.now.strftime('%Y-%m-%d')
+ahora = datetime.now.strftime('%H:%M:%S')
+dia = datetime.now().now.strftime('%A')
 
 datos_filtrados["Date"] = hoy
 datos_filtrados["hora"] = ahora
