@@ -12,6 +12,8 @@ jobs:
     steps:
     - name: Checkout repo
       uses: actions/checkout@v4
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}  # Ensures token has write access
 
     - name: Install Python packages
       run: pip install requests pandas
@@ -23,11 +25,9 @@ jobs:
       run: python script/request.py
 
     - name: Commit and Push updated CSV
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       run: |
         git config --global user.name 'github-actions[bot]'
         git config --global user.email 'github-actions[bot]@users.noreply.github.com'
         git add data/stations.csv
         git commit -m "Update stations.csv [bot]" || echo "No changes to commit"
-        git push https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/FedeGiovannetti/Eco_bici_Ciudad_Universitaria.git
+        git push
