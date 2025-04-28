@@ -1,7 +1,1 @@
 station_id,num_bikes_available,num_bikes_disabled,num_docks_available,num_docks_disabled,last_reported,is_charging_station,status,is_installed,is_renting,is_returning,traffic,num_bikes_available_types.mechanical,num_bikes_available_types.ebike,Date,hora,dia
-420,3,1,8,0,1745879801,False,IN_SERVICE,1,1,1,,3,0,2025-04-28,2025-04-28 23:39:03,Monday
-464,18,2,0,0,1745883418,False,IN_SERVICE,1,1,1,,18,0,2025-04-28,2025-04-28 23:39:03,Monday
-420,3,1,8,0,1745879801,False,IN_SERVICE,1,1,1,,3,0,2025-04-28,2025-04-28 23:44:44,Monday
-464,18,2,0,0,1745883779,False,IN_SERVICE,1,1,1,,18,0,2025-04-28,2025-04-28 23:44:44,Monday
-420,3,1,8,0,1745879801,False,IN_SERVICE,1,1,1,,3,0,2025-04-28,20:52:32,Monday
-464,18,2,0,0,1745884323,False,IN_SERVICE,1,1,1,,18,0,2025-04-28,20:52:32,Monday
