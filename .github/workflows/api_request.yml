@@ -13,7 +13,7 @@ jobs:
     - name: Checkout repo
       uses: actions/checkout@v4
       with:
-        token: ${{ secrets.GITHUB_TOKEN }}  # Ensures token has access to the private repo
+        token: ${{ secrets.GITHUB_TOKEN }}  # Use the default token for checking out repo
 
     - name: Install Python packages
       run: pip install requests pandas
