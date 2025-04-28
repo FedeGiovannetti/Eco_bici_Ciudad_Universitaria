@@ -28,7 +28,12 @@ estaciones_status_df["station_id"] = estaciones_status_df["station_id"].astype(i
 
 datos_filtrados = estaciones_status_df[(estaciones_status_df["station_id"] == 420) | (estaciones_status_df["station_id"] == 464)]
 
-csv_file_path = os.path.join(data_dir, 'stations.csv')
-datos_filtrados.to_csv(csv_file_path, index=False)
+csv_file_path = os.path.join(data_dir, 'full_data.csv')
+
+full_data = pd.read_csv(csv_file_path)
+
+full_data = pd.concat([full_data, datos_filtrados], ignore_index=True)
+
+full_data.to_csv(csv_file_path, index=False)
 
 print(f"CSV saved to {csv_file_path}")
