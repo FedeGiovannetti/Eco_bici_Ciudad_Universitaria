@@ -3,17 +3,18 @@ name: API Request Every Hour
 on:
   schedule:
     - cron: '0 * * * *'  # Every hour
-  workflow_dispatch:     # Allow manual runs too
+  workflow_dispatch:
 
 jobs:
   request_job:
     runs-on: ubuntu-latest
+    # Add permissions to enable pushing with GITHUB_TOKEN
+    permissions:
+      contents: write
 
     steps:
     - name: Checkout repo
       uses: actions/checkout@v4
-      with:
-        token: ${{ secrets.GITHUB_TOKEN }}  # Use the default token for checking out repo
 
     - name: Install Python packages
       run: pip install requests pandas
@@ -30,4 +31,4 @@ jobs:
         git config --global user.email 'github-actions[bot]@users.noreply.github.com'
         git add data/stations.csv
         git commit -m "Update stations.csv [bot]" || echo "No changes to commit"
-        git push https://x-access-token:${{ secrets.MY_PAT_TOKEN }}@github.com/FedeGiovannetti/Eco_bici_Ciudad_Universitaria.git
+        git push origin HEAD:main
