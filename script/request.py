@@ -1,6 +1,6 @@
 import requests
 import os
-import pandas
+import pandas as pd
 
 credenciales = {
     "client_id": os.getenv("CLIENT_ID"),
