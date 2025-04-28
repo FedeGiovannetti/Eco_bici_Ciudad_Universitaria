@@ -46,9 +46,9 @@ datos_filtrados = estaciones_status_df[(estaciones_status_df["station_id"] == 42
 
 # Le agrego la fecha
 
-hoy = datetime.now.strftime('%Y-%m-%d')
-ahora = datetime.now.strftime('%H:%M:%S')
-dia = datetime.now().now.strftime('%A')
+hoy = now.strftime('%Y-%m-%d')
+ahora = now.strftime('%H:%M:%S')
+dia = now().now.strftime('%A')
 
 datos_filtrados["Date"] = hoy
 datos_filtrados["hora"] = ahora
