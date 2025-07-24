@@ -3803,3 +3803,5 @@ station_id,num_bikes_available,num_bikes_disabled,num_docks_available,num_docks_
 464,5,2,13,0,1753359978,False,IN_SERVICE,1,1,1,,5,0,2025-07-24,09:26:32,Thursday
 420,7,1,4,0,1753363874,False,IN_SERVICE,1,1,1,,7,0,2025-07-24,10:33:02,Thursday
 464,5,2,13,0,1753363955,False,IN_SERVICE,1,1,1,,5,0,2025-07-24,10:33:02,Thursday
+420,7,1,4,0,1753366443,False,IN_SERVICE,1,1,1,,7,0,2025-07-24,11:15:02,Thursday
+464,5,2,13,0,1753365235,False,IN_SERVICE,1,1,1,,5,0,2025-07-24,11:15:02,Thursday
