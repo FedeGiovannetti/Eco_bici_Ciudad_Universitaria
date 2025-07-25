@@ -3839,3 +3839,5 @@ station_id,num_bikes_available,num_bikes_disabled,num_docks_available,num_docks_
 464,13,2,5,0,1753431371,False,IN_SERVICE,1,1,1,,13,0,2025-07-25,05:17:34,Friday
 420,7,1,4,0,1753434933,False,IN_SERVICE,1,1,1,,7,0,2025-07-25,06:16:43,Friday
 464,13,2,5,0,1753434820,False,IN_SERVICE,1,1,1,,13,0,2025-07-25,06:16:43,Friday
+420,7,1,4,0,1753438437,False,IN_SERVICE,1,1,1,,7,0,2025-07-25,07:14:12,Friday
+464,13,2,5,0,1753438437,False,IN_SERVICE,1,1,1,,13,0,2025-07-25,07:14:12,Friday
