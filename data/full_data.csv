@@ -4411,3 +4411,5 @@ station_id,num_bikes_available,num_bikes_disabled,num_docks_available,num_docks_
 464,7,1,12,0,1754565098,False,IN_SERVICE,1,1,1,,7,0,2025-08-07,08:12:34,Thursday
 420,2,1,9,0,1754569552,False,IN_SERVICE,1,1,1,,2,0,2025-08-07,09:27:30,Thursday
 464,7,1,12,0,1754569620,False,IN_SERVICE,1,1,1,,7,0,2025-08-07,09:27:30,Thursday
+420,3,1,8,0,1754573589,False,IN_SERVICE,1,1,1,,3,0,2025-08-07,10:35:16,Thursday
+464,10,1,9,0,1754573609,False,IN_SERVICE,1,1,1,,10,0,2025-08-07,10:35:16,Thursday
