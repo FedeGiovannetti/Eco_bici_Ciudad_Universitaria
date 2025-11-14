@@ -8861,3 +8861,5 @@ station_id,num_bikes_available,num_bikes_disabled,num_docks_available,num_docks_
 464,7,1,12,0,1763093614.0,False,IN_SERVICE,1,1,1,,7,0,2025-11-14,01:16:22,Friday
 420,0,2,10,0,1763100983.0,False,IN_SERVICE,1,1,1,,0,0,2025-11-14,03:19:14,Friday
 464,5,1,14,0,1763101030.0,False,IN_SERVICE,1,1,1,,5,0,2025-11-14,03:19:14,Friday
+420,0,2,10,0,1763104297.0,False,IN_SERVICE,1,1,1,,0,0,2025-11-14,04:12:34,Friday
+464,5,1,14,0,1763104287.0,False,IN_SERVICE,1,1,1,,5,0,2025-11-14,04:12:34,Friday
